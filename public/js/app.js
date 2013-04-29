@@ -8,4 +8,15 @@
         this.editing = ko.observable(editing);
     }
 
+    /**
+     * メインとなるビューモデルのコンストラクタ
+     */
+    var ViewModel = function() {
+        var self = this;
+        var todos = [];
+    }
+
+    // アプリケーションをセットアップ
+    var viewModel = new ViewModel();
+    ko.applyBindings(viewModel);
 })();
