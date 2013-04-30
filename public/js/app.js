@@ -15,8 +15,10 @@
         var self = this;
         var todos = [];
 
+        self.current = ko.observable();
+
         self.add = function(viewModel, e) {
-            console.log(e);
+            alert(self.current());
         }
     }
 
