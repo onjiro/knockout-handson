@@ -5,7 +5,7 @@
     var Todo = function(title, completed) {
         this.title = ko.observable(title);
         this.completed = ko.observable(completed);
-        this.editing = ko.observable(editing);
+        this.editing = ko.observable(false);
     }
 
     /**
@@ -18,7 +18,7 @@
         self.current = ko.observable();
 
         self.add = function(viewModel, e) {
-            alert(self.current());
+            self.todos.push(new Todo(self.current(), false));
         }
     }
 
