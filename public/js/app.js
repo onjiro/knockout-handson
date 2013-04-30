@@ -15,10 +15,14 @@
         var self = this;
 
         self.todos = ko.observableArray();
-        self.current = ko.observable();
+        self.current = ko.observable('');
 
         self.add = function(viewModel, e) {
-            self.todos.push(new Todo(self.current(), false));
+            var current = self.current().trim();
+            if (current) {
+                self.todos.push(new Todo(self.current(), false));
+                self.current('');
+            }
         }
     }
 
