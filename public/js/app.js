@@ -13,8 +13,8 @@
      */
     var ViewModel = function() {
         var self = this;
-        var todos = [];
 
+        self.todos = ko.observableArray();
         self.current = ko.observable();
 
         self.add = function(viewModel, e) {
