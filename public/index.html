@@ -10,7 +10,7 @@
     <section id="todoapp">
       <header id="header">
         <h1>todos</h1>
-        <input id="new-todo" placeholder="What needs to be done?" autofocus>
+        <input id="new-todo" data-bind="enterKey: add" placeholder="What needs to be done?" autofocus>
       </header>
 
       <section id="main" >
@@ -56,6 +56,7 @@
       <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
     </footer>
     <script src="js/knockout.js"></script>
+    <script src="js/customBindings.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

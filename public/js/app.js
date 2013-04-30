@@ -14,6 +14,10 @@
     var ViewModel = function() {
         var self = this;
         var todos = [];
+
+        self.add = function(viewModel, e) {
+            console.log(e);
+        }
     }
 
     // アプリケーションをセットアップ
