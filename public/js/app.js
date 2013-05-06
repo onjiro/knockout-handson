@@ -24,6 +24,14 @@
                 self.current('');
             }
         }
+
+        self.editable = function(todo, e) {
+            todo.editing(true);
+        }
+
+        self.update = function(todo, e) {
+            todo.editing(false);
+        }
     }
 
     // アプリケーションをセットアップ
